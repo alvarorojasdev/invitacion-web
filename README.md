@@ -27,4 +27,4 @@ Astro · React · Tailwind CSS · Firebase Firestore · react-hook-form
 
 ## Autor
 
-Desarrollado por [Álvaro Rojas](https://github.com/alvarorojasdev).
+Desarrollado por [Alvaro Rojas](https://github.com/alvarorojasdev).
