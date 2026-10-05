@@ -1,0 +1,75 @@
+<div>
+  <img src="/hero.jpg" id="parrallax-hero" alt="hero-parallax" />
+</div>
+
+<section
+  class="greater-desktop:h-screen desktop:h-[670px] h-[670px] hero-section desktop:w-full w-full flex justify-center items-center bg-fixed bg-hero-pattern bg-cover bg-no-repeat bg-center">
+  <div
+    class="info-hero z-50 flex flex-col justify-center items-center absolute text-center mx-auto greater-desktop:max-w-3xl desktop:max-w-xl max-w-80 h-[670px] gap-6 pt-12 phone:pt-4">
+    <!-- Logo centrado -->
+    <div class="w-[100px] h-[100px] desktop:w-40 desktop:h-40 greater-desktop:w-48 greater-desktop:h-48">
+      <img
+        src="/favicon.png"
+        alt="Mateo & Laura"
+        class="w-full h-full object-contain"
+      />
+    </div>
+
+
+    <!-- Flecha hacia abajo -->
+    <div class="mt-auto pb-6">
+      <img src="/arrow_down.gif" class="w-14 desktop:w-20" alt="Arrow Down" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .date-container {
+    z-index: 10;
+  }
+
+  .date-hero::before,
+  .date-hero::after {
+    border-top: 1px solid white;
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.7em;
+    width: 25%;
+  }
+  #parrallax-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 725px;
+    object-fit: cover;
+  }
+
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 725px;
+    background-color: rgba(29, 29, 27, 0.2);
+    z-index: 0;
+    top: 0;
+    left: 0;
+  }
+  @media (min-width: 993px) {
+    #parrallax-hero {
+      height: 725px;
+    }
+    .hero-section::before {
+      height: 725px;
+    }
+  }
+  @media (min-width: 1745px) {
+    #parrallax-hero {
+      height: 100vh;
+    }
+    .hero-section::before {
+      height: 100vh;
+    }
+  }
+</style>

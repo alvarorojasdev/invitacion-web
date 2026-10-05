@@ -1,0 +1,29 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Hero from "@/sections/Hero.astro";
+import Countdown from "@/sections/Countdown.astro";
+import PrincipalDate from "@/sections/PrincipalDate.astro";
+import Message from "@/sections/Message.astro";
+import Party from "@/sections/Party.astro";
+import LiveStream from "@/sections/LiveStream.astro";
+import Footer from "@/sections/Footer.astro";
+import VideoSection from "@/sections/VideoSection.astro";
+import PrincipalMessage from "@/sections/PrincipalMessage.astro";
+---
+
+<Layout title="Boda de Mateo & Laura">
+  <div id="hero" class="hidden">
+    <Hero />
+    <VideoSection src="/videos/inicio.webm" height="100vh" />
+    <section class="p-4">
+      <PrincipalMessage />
+      <PrincipalDate />
+      <Message />
+      <Party />
+      <VideoSection src="/videos/momento.webm" height="90vh" />
+      <LiveStream />
+      <Countdown />
+      <Footer />
+    </section>
+  </div>
+</Layout>
